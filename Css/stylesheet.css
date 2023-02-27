@@ -2,6 +2,9 @@ body{
     margin:0px;
     font-family: Notolight;
 }
+p{
+    font-family: NotoReg;
+}
 nav {   
     height: 4rem;
     padding: 0px 10% 5px 10%;
@@ -36,14 +39,16 @@ nav {
 .items{
     display: grid;
     grid-template-columns: auto auto;
-    
 }
 .item{
-    border: 1px solid  rgb(233, 233, 233);
+    border: 2px solid  rgb(233, 233, 233);
     width: 80%; 
     margin: 10px 0px;
-    padding:   20px;
     border-radius: 10px;
+    border-right: 1px solid black;
+    
+    box-shadow: darkgray;
+    box-shadow:4px 4px rgb(92, 88, 88);
 }
 .tools{
     
@@ -52,6 +57,18 @@ nav {
 .icons a{
     font-size:larger;
     margin: 12px;
+}
+.text, .tools{
+    background-color: white;
+    opacity: 1;
+}
+.text{
+    width: 90%;
+    text-align: justify;
+}
+.item h3{
+    background-color: white;
+    opacity: 1;
 }
 a{
     text-decoration: none;
@@ -62,7 +79,81 @@ a{
     padding: 0px;
     margin: 0px;
     display: inline;
+    
+    transition: font-size 0.5s ease-in-out;
+    /* transition-property: size;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out; */
+}
+.emoji:hover{
+    font-size:115px;
+    cursor: pointer;
+    
+}
+.cover{
+    padding:   15px;
+    background-color: white;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+.cover img{
+    
+    opacity: 0;
+    width:0px;
+    height: 0px;
+    transition: opacity 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    transition: height 0.8s ease-in-out;
+    /* transition-property: display;
+    transition-delay: 2s;
+    transition-duration:900ms; */
+}
+#fingerprint:hover img{
+    width: 70%;
+    height: 35%;
+    opacity:1;
+    display: block;
+    
+
 }        
+#smart_security:hover img{
+    width: 70%;
+    height: 35%;
+    opacity:1;
+    display: block;
+}
+#cantilever:hover img{
+    width: 70%;
+    height: 35%;
+    opacity:1;
+    display: block;
+    
+}
+#rover:hover img{
+    width: 70%;
+    height: 35%;
+    opacity:1;
+    display: block;
+}
+#extractor:hover img{
+    width: 70%;
+    height: 35%;
+    opacity:1;
+    display: block;
+}
+#predictor:hover img{
+    width: 70%;
+    height: 35%;
+    opacity:1;
+    display:block;
+}
+#proxie:hover img{
+    width: 70%;
+    height: 35%;
+    opacity:1;
+    display:block;
+}
 ul{
     list-style-type: none;
 }
