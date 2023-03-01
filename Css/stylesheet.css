@@ -88,7 +88,7 @@ a{
 .emoji:hover{
     font-size:115px;
     cursor: pointer;
-    
+
 }
 .cover{
     padding:   15px;
@@ -176,7 +176,9 @@ footer{
     background-color:  rgb(210, 238, 245);
     padding: 30px;
     margin-top: 30px;
-
+    margin-left: 0px;
+    margin-right: 0px; 
+    margin-bottom: 0px;
 }
 @font-face {
     font-family: Noto;
